@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import axios from "axios";
+import React, { useEffect, useState } from 'react';
+import axios from 'axios';
 
 function App() {
   const [posts, setPosts] = useState([]);
@@ -10,7 +10,7 @@ function App() {
 
   const getPosts = () => {
     axios
-      .get("https://jsonplaceholder.typicode.com/users")
+      .get('https://jsonplaceholder.typicode.com/users')
       .then((res) => {
         setPosts(res.data);
         console.log(res.data);
